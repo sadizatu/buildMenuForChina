@@ -1,0 +1,139 @@
+SET
+CREATE TABLE
+CREATE TABLE
+constraint_name|column_name|table_name
+restaurant_pkey|id|restaurant
+(1 row)
+constraint_name|column_name|table_name
+address_pkey|id|address
+address_restaurant_id_fkey|restaurant_id|address
+(2 rows)
+CREATE TABLE
+constraint_name|column_name|table_name
+category_pkey|id|category
+(1 row)
+CREATE TABLE
+constraint_name|column_name|table_name
+dish_pkey|id|dish
+(1 row)
+CREATE TABLE
+constraint_name|column_name|table_name
+review_pkey|id|review
+review_restaurant_id_fkey|restaurant_id|review
+(2 rows)
+CREATE TABLE
+constraint_name|column_name|table_name
+categories_dishes_pkey|category_id|categories_dishes
+categories_dishes_pkey|dish_id|categories_dishes
+(2 rows)
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+INSERT 0 1
+name|street_number|street_name|telephone
+Bytes of China|2020|Busy Street|6175551212
+(1 row)
+best_rating
+3.9
+(1 row)
+dish_name|price|category
+Beef with Garlic Sauce|$8.95|Chicken
+Beef with Garlic Sauce|$8.95|House Specials
+Beef with Garlic Sauce|$8.95|Luncheon Specials
+Chicken Wings|$6.95|House Specials
+Chicken Wings|$6.95|Chicken
+Chicken Wings|$6.95|Luncheon Specials
+Chicken with Broccoli|$8.95|Chicken
+Chicken with Broccoli|$6.95|House Specials
+Chicken with Broccoli|$8.95|Luncheon Specials
+Chicken with Broccoli|$6.95|Luncheon Specials
+Chicken with Broccoli|$8.95|House Specials
+Chicken with Broccoli|$6.95|Chicken
+Fresh Mushroom with Snow Peapods and Baby Corns|$8.95|Luncheon Specials
+Fresh Mushroom with Snow Peapods and Baby Corns|$8.95|Chicken
+Fresh Mushroom with Snow Peapods and Baby Corns|$8.95|House Specials
+Hunan Special Half & Half|$17.95|House Specials
+Hunan Special Half & Half|$17.95|Luncheon Specials
+Hunan Special Half & Half|$17.95|Chicken
+Sesame Chicken|$15.95|Chicken
+Sesame Chicken|$15.95|Luncheon Specials
+Sesame Chicken|$15.95|House Specials
+Special Minced Chicken|$16.95|Luncheon Specials
+Special Minced Chicken|$16.95|House Specials
+Special Minced Chicken|$16.95|Chicken
+(24 rows)
+category|dish_name|price
+("C ",Chicken,)|Beef with Garlic Sauce|$8.95
+(HS,"House Specials",)|Beef with Garlic Sauce|$8.95
+(LS,"Luncheon Specials","Served with Hot and Sour Soup or Egg Drop Soup and Fried or Steamed Rice  between 11:00 am and 3:00 pm from Monday to Friday.")|Beef with Garlic Sauce|$8.95
+(HS,"House Specials",)|Chicken Wings|$6.95
+("C ",Chicken,)|Chicken Wings|$6.95
+(LS,"Luncheon Specials","Served with Hot and Sour Soup or Egg Drop Soup and Fried or Steamed Rice  between 11:00 am and 3:00 pm from Monday to Friday.")|Chicken Wings|$6.95
+("C ",Chicken,)|Chicken with Broccoli|$8.95
+(HS,"House Specials",)|Chicken with Broccoli|$6.95
+(LS,"Luncheon Specials","Served with Hot and Sour Soup or Egg Drop Soup and Fried or Steamed Rice  between 11:00 am and 3:00 pm from Monday to Friday.")|Chicken with Broccoli|$8.95
+(LS,"Luncheon Specials","Served with Hot and Sour Soup or Egg Drop Soup and Fried or Steamed Rice  between 11:00 am and 3:00 pm from Monday to Friday.")|Chicken with Broccoli|$6.95
+(HS,"House Specials",)|Chicken with Broccoli|$8.95
+("C ",Chicken,)|Chicken with Broccoli|$6.95
+(LS,"Luncheon Specials","Served with Hot and Sour Soup or Egg Drop Soup and Fried or Steamed Rice  between 11:00 am and 3:00 pm from Monday to Friday.")|Fresh Mushroom with Snow Peapods and Baby Corns|$8.95
+("C ",Chicken,)|Fresh Mushroom with Snow Peapods and Baby Corns|$8.95
+(HS,"House Specials",)|Fresh Mushroom with Snow Peapods and Baby Corns|$8.95
+(HS,"House Specials",)|Hunan Special Half & Half|$17.95
+(LS,"Luncheon Specials","Served with Hot and Sour Soup or Egg Drop Soup and Fried or Steamed Rice  between 11:00 am and 3:00 pm from Monday to Friday.")|Hunan Special Half & Half|$17.95
+("C ",Chicken,)|Hunan Special Half & Half|$17.95
+("C ",Chicken,)|Sesame Chicken|$15.95
+(LS,"Luncheon Specials","Served with Hot and Sour Soup or Egg Drop Soup and Fried or Steamed Rice  between 11:00 am and 3:00 pm from Monday to Friday.")|Sesame Chicken|$15.95
+(HS,"House Specials",)|Sesame Chicken|$15.95
+(LS,"Luncheon Specials","Served with Hot and Sour Soup or Egg Drop Soup and Fried or Steamed Rice  between 11:00 am and 3:00 pm from Monday to Friday.")|Special Minced Chicken|$16.95
+(HS,"House Specials",)|Special Minced Chicken|$16.95
+("C ",Chicken,)|Special Minced Chicken|$16.95
+(24 rows)
+spicy_dish_name|price|category
+Chicken Wings|$6.95|Chicken
+Beef with Garlic Sauce|$8.95|Chicken
+Hunan Special Half & Half|$17.95|Chicken
+Chicken Wings|$6.95|Luncheon Specials
+Beef with Garlic Sauce|$8.95|Luncheon Specials
+Hunan Special Half & Half|$17.95|Luncheon Specials
+Chicken Wings|$6.95|House Specials
+Beef with Garlic Sauce|$8.95|House Specials
+Hunan Special Half & Half|$17.95|House Specials
+(9 rows)
+dish_id|dish_count
+1|2
+3|1
+4|1
+5|1
+6|1
+7|1
+8|1
+(7 rows)
+dish_id|dish_count
+1|2
+(1 row)
+dish_name|dish_id|dish_count
+Chicken with Broccoli|1|2
+(1 row)
+rating|description
+5.0|Would love to host another birthday party at Bytes of China!
+(1 row)
